@@ -21,32 +21,11 @@ import java.util.Scanner;
 public class medicinelinkedlist {
 
     nodemedicine head = null;
-//    public void UI() throws IOException{
-//        Scanner sc = new Scanner (System.in);
-//         System.out.println(" 1-load data 2-print all 3-Sort by expire date 4-sort by price 5-Sort by quantity 6-sell medicine 7-expire at date 8- save data 9-exit,10-delete medicine 11-add new medicine 12-update 13-specific update 14- print medicine data");
-//        int x = sc.nextInt();
-//        if(x==1){
-//            loadData();
-//            
-//            
-//        }else if(x==2){
-//            printall();
-//        }else if(x==3){
-//            SortByEpireDate();
-//        }else if(x==4){
-//            sortByPrice();
-//        }else if(x==5){
-//            sortByQuanitiy();
-//        }else if(x==6){
-//            sellMedicine(String n, int c);
-//        }else if(x==7)
-//        
-//        
-//    }
+
 
     public void loadData() throws FileNotFoundException, IOException {
         File file;
-        file = new File("D:\\datastructure\\medicine.txt");
+        file = new File("file path");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String st;
 
@@ -525,7 +504,7 @@ public class medicinelinkedlist {
 
     public void SaveData() throws IOException {
         BufferedWriter f_writer;
-        f_writer = new BufferedWriter(new FileWriter("D:\\datastructure\\medicine 2.txt"));
+        f_writer = new BufferedWriter(new FileWriter("file path"));
 
         nodemedicine temp = head;
         String s = null;
